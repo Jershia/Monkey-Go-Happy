@@ -152,6 +152,7 @@ function Obstacles(){
 if (frameCount % 300 === 0){
    obstacle = createSprite(400,290,10,40);
    obstacle.addImage(obstacleImage);
+   obstacle.setCollider("rectangle",0,100,250,250)
    obstacle.scale = 0.2;
    obstacle.velocityX = -4;
    obstacle.lifetime = 300;
